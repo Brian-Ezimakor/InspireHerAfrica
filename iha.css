@@ -23,6 +23,7 @@ padding: 0px;
 overflow-x: hidden;
 scroll-behavior: smooth;
 user-select: none;
+/* color: #ffd700; */
 }
 
 * {
@@ -44,7 +45,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-background-color: rgba(255, 255, 255, 0.8);
+background-color: #ffffffcc;
 backdrop-filter: blur(5px);
 padding-left: 40px;
 padding-right: 30px;
@@ -339,7 +340,7 @@ padding-bottom: 8px;
 }
 
 .open a:hover {
-padding-left: 12px;
+padding-left: 10px;
 }
 
 .dropdown:hover .about-content, .dropdown2:hover .program-content, .dropdown3:hover .media-content {
@@ -383,7 +384,7 @@ border-image:
 linear-gradient(#00000098, #00000098) fill 1;
 }
 
-.hero p {
+.hero p, .hero1 p {
 text-align: center;
 letter-spacing: 0.6px;
 padding-top: 40px;
@@ -647,7 +648,7 @@ border-bottom-right-radius: 20px;
 font-size: 15.4px;
 }
 
-.whatwedo-link {
+.whatwedo-link, .whatwedo-link a, .bloglink {
 text-align: center;
 padding-top: 24px;
 }
@@ -813,6 +814,11 @@ line-height: 24px;
 font-size: 16px;
 }
 
+.blog-teaser link {
+text-align: center;
+padding-inline: auto;
+}
+
 .imgContainer {
 height: 260px;
 width: 320px;
@@ -832,8 +838,7 @@ transition: transform .7s ease;
 footer {
 padding-top: 80px;
 padding-bottom: 60px;
-padding-inline: 100px;
-/* background-color: red; */
+padding-inline: 70px;
 gap: 20px;
 display: flex;
 flex-direction: row;
@@ -880,26 +885,35 @@ color: white;
 
 .footerlinks{
 display: flex;
-flex-direction: row;
+flex-direction: row-reverse;
 /* justify-content: space-between; */
-gap: 50px;
-
+gap: 35px;
 }
 
 .lastlink p {
 padding-bottom: 5px;
 }
-.lastlink h4
-/* , .socials h4  */
-{
-color: #6e40c9;
-}
 .lastlink a {
-color: #a25f2d;
+/* color: #a25f2d; */
+/* text-decoration: underline; */
 cursor: pointer;
 }
 .lastlink a:hover {
 color: #874f26;
+}
+
+.linkedin-integration {
+width: 380px;
+box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.foothead1, .foothead2 {
+font-weight: bold;
+color: #36200f;
+}
+
+.foothead2 a:hover {
+text-decoration: underline #874f26;
 }
 
 .rights {
@@ -916,6 +930,91 @@ background-color: white;
 color: #000000;
 font-size: 17px;
 }
+
+.displaytoggler {
+display: none;
+opacity: 1;
+height: 100%;
+width: 100%;
+}
+
+.popupdiv {
+margin: auto;
+background-color: #00000096;
+height: 100%;
+width: 100%;
+z-index: 700;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+padding: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.popup {
+width: 600px;
+height: auto;
+background-color: #ffffff;
+position: relative;
+padding: 1.2rem;
+text-align: center;
+border-radius: 16px;
+padding-bottom: 2rem;
+}
+
+.popup img {
+height: 200px;
+margin-inline: auto;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 20px;
+}
+
+.popup p {
+max-width: 65ch;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+text-wrap: pretty;
+margin-bottom: 10px;
+}
+
+.popup a {
+margin-top: 20px;
+}
+
+.popup h2 {
+font-size: 37px;
+padding-top: 24px;
+}
+
+.x {
+/* background-color: tomato; */
+position: absolute;
+top: 1.1rem;
+right: 1.1rem;
+height: 30px;
+width: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* font-weight: bold; */
+color: #000000;
+font-size: 24px;
+cursor: pointer;
+}
+
+.x:hover {
+background-color: tomato;
+color: white;
+}
+
 
 @media screen and (max-width: 768px){
     body {
