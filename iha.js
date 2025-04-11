@@ -40,7 +40,7 @@ document.getElementById("year").innerHTML = currentYear;
 setTimeout(() => {
   document.querySelector(".displaytoggler").style.display = "block";
   document.querySelector(".displaytoggler").style.opacity = "1";
-}, 8000);
+}, 9200);
 
 document.addEventListener("click", e => {
   if (e.target.matches(".stop")) {
