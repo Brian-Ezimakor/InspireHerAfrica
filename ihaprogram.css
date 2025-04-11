@@ -1,0 +1,455 @@
+.newhero {
+background-color: #36200f;
+scroll-behavior: auto;
+color: white;
+display: flex;
+justify-content: space-between;
+/* gap: 28px; */
+flex-direction: row;
+/* flex-wrap: wrap; */
+align-items: center;
+height: 85svh;
+margin-top: 95px;
+padding-top: 70px;
+padding-bottom: 70px;
+padding-inline: 90px;
+z-index: 1;
+border-bottom-right-radius: 53%;
+}
+
+.newhero h1 {
+text-align: left;
+line-height: 62px;
+}
+
+.programh1 {
+font-size: 56px;
+}
+
+.newhero img {
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+height: 380px;
+width: auto;
+border-radius: 5px;
+padding-top: auto;
+padding-bottom: auto;
+}
+
+.mentorshipbtn {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 15px;
+}
+
+.newhero p {
+margin-top: 15px;
+font-size: 20px;
+}
+
+.aboutourprogram {
+padding-top: 70px;
+padding-bottom: 50px;
+padding-inline: 105px;
+flex-wrap: wrap;
+}
+
+.valuediv {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+justify-content: space-between;
+/* column-gap: 32px; */
+row-gap: 44px;
+width: 100%;
+margin-top: 32px;
+/* columns: 300px;*/
+}
+
+.about-program {
+padding-top: 70px;
+padding-inline: 105px;
+}
+
+.header-word {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.header-word p {
+max-width: 35ch;
+}
+
+.faqs{
+padding-top: 96px;
+padding-bottom: 96px;
+padding-inline: 140px;
+/* background-color: red; */
+}
+
+#mycheck:checked ~ .a {
+display: block;
+}
+
+.ans {
+display: none;
+padding: 30px 35px;
+}
+
+#mycheck {
+display: none;
+}
+
+#mycheck1:checked ~ .b {
+display: block;
+}
+
+#mycheck1 {
+display: none;
+}
+
+#mycheck2:checked ~ .c {
+display: block;
+}
+
+#mycheck2 {
+display: none;
+}
+
+#mycheck3:checked ~ .d {
+display: block;
+}
+
+#mycheck3 {
+display: none;
+}
+
+#mycheck4:checked ~ .e {
+display: block;
+}
+
+#mycheck4 {
+display: none;
+}
+
+#mycheck5:checked ~ .f {
+display: block;
+}
+
+#mycheck5 {
+display: none;
+}
+
+#mycheck6:checked ~ .g {
+display: block;
+}
+
+#mycheck6 {
+display: none;
+}
+
+#mycheck7:checked ~ .h {
+display: block;
+}
+
+#mycheck7 {
+display: none;
+}
+
+#mycheck8:checked ~ .i {
+display: block;
+}
+
+#mycheck8 {
+display: none;
+}
+
+#mycheck9:checked ~ .j {
+display: block;
+}
+
+#mycheck9 {
+display: none;
+}
+
+label {
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+padding: 28px 32px;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+cursor: pointer;
+}
+
+label span {
+color: #874f26;
+font-weight: bold;
+}
+
+.ans a {
+color: #874f26;
+}
+
+@media screen and (max-width: 475px) {
+    .newhero {
+    flex-direction: column;
+    padding-inline: 10px;
+    height: auto;
+    margin-top: 75px;
+    row-gap: 15px;
+    border-bottom-right-radius: 126px;
+    padding-bottom: 45px;
+    }
+
+    .newhero h1 {
+    font-size: 34px;
+    line-height: 33px;
+    text-align: center;
+    }
+
+    h1, .statement h1 {
+    font-size: 30px;
+    }
+
+    h2, .statement h2 {
+    font-size: 28px;
+    }
+
+    .newhero p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 17px;
+    }
+
+    .newhero img {
+    width: 100%;
+    margin-inline: 8px;
+    height: 280px;
+    }
+
+    .mentorshipbtn {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .about-program, .aboutourprogram, .faqs {
+    padding-inline: 12px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    }
+
+    .aboutourprogram {
+    padding-top: 20px;
+    }
+
+    .valuediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    row-gap: 28px;
+    }
+
+    label, .ans {
+    padding: 22px 10px;
+    }
+}
+
+@media screen and (min-width: 475px) and (max-width: 640px) {
+    .newhero {
+    padding-inline: 10px;
+    height: auto;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 45px;
+    margin-top: 70px;
+    border-bottom-right-radius: 38%;
+    }
+
+    .newhero h1 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    }
+
+    .newhero p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 18px;
+    }
+
+    .mentorshipbtn {
+    justify-content: center;
+    }
+
+    h1, .statement h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    }
+
+    h2, .statement h2 {
+    font-size: 36px;
+    padding-bottom: 6px;
+    }
+
+    .vision img {
+    height: 100%;
+    aspect-ratio: 16/9;
+    width: 100%;
+    }
+
+    .about-program, .aboutourprogram, .faqs {
+    padding-inline: 20px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    }
+
+    .aboutourprogram {
+    padding-top: 18px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .newhero {
+    padding-inline: 10px;
+    height: auto;
+    flex-direction: column;
+    row-gap: 24px;
+    padding-bottom: 40px;
+    margin-top: 94px;
+    border-bottom-right-radius: 38%;
+    }
+
+    .newhero img {
+    width: 100%;
+    padding-inline: 8px;
+    }
+
+    .newhero h1 {
+    font-size: 46px;
+    line-height: 48px;
+    text-align: center;
+    }
+
+    .newhero p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 18px;
+    }
+
+    .mentorshipbtn {
+    justify-content: center;
+    }
+
+    h1, .statement h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    }
+
+    h2, .statement h2 {
+    font-size: 40px;
+    padding-bottom: 6px;
+    }
+
+    .about-program, .aboutourprogram, .faqs {
+    padding-inline: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    }
+
+    .valuediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    row-gap: 28px;
+    }
+
+    .valuesimg {
+    height: 324px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .newhero {
+    padding-inline: 20px;
+    }
+ 
+    .newhero h1 {
+    font-size: 48px;
+    line-height: 56px;
+    }
+
+    h1, .statement h1 {
+    font-size: 47px;
+    margin-bottom: 12px;
+    }
+
+    h2, .statement h2 {
+    font-size: 42px;
+    padding-bottom: 6px;
+    }
+
+    .mentorshipbtn {
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    }
+
+    /* .mentorshipbtn button {
+    padding: 11px 31px;
+    font-size: 15px;
+    } */
+    .about-program {
+    padding-bottom: 10px;
+    }
+
+    .aboutourprogram {
+    padding-top: 12px;
+    }
+
+    .about-program, .aboutourprogram, .faqs {
+    padding-inline: 20px;
+    }
+
+    .valuediv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    column-gap: 10px;
+    margin-top: 24px;
+    /* row-gap: 28px; */
+    }
+
+    footer p {
+    font-size: 15px;
+    word-spacing: 2px;
+    letter-spacing: 0.35px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .newhero {
+    padding-inline: 360px;
+    }
+
+    .about-program, .aboutourprogram, .faqs {
+    padding-inline: 465px;
+    }
+
+    .container-wrapper {
+    margin-inline: auto;
+    max-width: 95%;
+    }
+
+    .vision p:not(:first-of-type), .donate p:not(:first-of-type), .history p:not(:first-of-type) {
+    max-width: 70ch;
+    }
+}

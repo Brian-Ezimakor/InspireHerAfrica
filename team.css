@@ -1,0 +1,344 @@
+.hero1 {
+background-color: #36200f;
+scroll-behavior: auto;
+color: white;
+object-fit: cover;
+background-size: cover;
+object-position: center;
+background-repeat: none;
+height: 50svh;
+margin-top: 95px;
+padding-top: 90px;
+padding-bottom: 130px;
+/* padding-inline: 5px; */
+position: relative;
+z-index: 1;
+}
+
+.hero1 p {
+/* text-align: center#36200f;
+letter-spacing: 0.6px;
+padding-top: 40px;
+padding-inline: 200px;
+font-size: 17px;
+line-height: 25px; */
+padding-inline: 250px;
+}
+
+.hero1 a {
+color: #a25f2d;
+text-decoration: underline #a25f2d;
+}
+
+.team {
+padding-inline: 90px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+row-gap: 40px;
+flex-wrap: wrap;
+}
+
+.memberbio {
+display: flex;
+flex-direction: column;
+gap: 0;
+position: relative;
+}
+
+.members {
+height: 336px;
+width: 310px;
+background-repeat: no-repeat;
+background-size: cover;
+image-rendering: smooth;
+object-fit: cover;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.imgwrapper {
+padding: 30px;
+text-align: center;
+background-color: #ecdfd5;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.membersdiv {
+width: inherit;
+height: auto;
+background-color: #ecdfd5;
+padding: 36px 24px;
+padding-bottom: 40px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+.membersdiv h4 {
+color: #36200f;
+font-size: 18px;
+padding-bottom: 8px;
+}
+
+.membersdiv p {
+font-size: 14px;
+line-height: normal;
+max-width: 30ch;
+}
+
+.memberbio a {
+height: 44px;
+width: 44px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: #a25f2d;
+border-radius: 50%;
+}
+
+.membermedias {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 8px;
+margin-top: 18px;
+}
+
+.overlay1 {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: #ecdfd5;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+cursor: pointer;
+color: white;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.memberbio:hover .overlay1 {
+height: 100%;
+padding: 10px 16px;
+}
+
+.overlay1 p {
+font-size: 14px;
+line-height: 20px;
+color: black;
+}
+
+@media screen and (max-width: 475px) {
+    .hero1 {
+    margin-top: 75px;
+    height: auto;
+    padding-inline: 10px;
+    padding-top: 84px;
+    padding-bottom: 32px;
+    }
+
+    .hero1 h1 {
+    font-size: 34px;
+    line-height: 34px;
+    }
+
+    .hero1 p {
+    padding-inline: 10px;
+    font-size: 15px;
+    }
+
+    h2, .statement h2 {
+    font-size: 28px;
+    }
+
+    .team, .podcasts-wrapper, .blogs, .contact, .e-books-wrapper {
+    padding-inline: 12px;
+    row-gap: 32px;
+    }
+
+    .members {
+    width: 100%;
+    }
+
+    .imgwrapper {
+    padding: 18px;
+    }
+
+    .membersdiv {
+    padding: 34px 18px;
+    padding-bottom: 43px;
+    }
+
+    .overlay1 p {
+    font-size: 13.5px;
+    line-height: 16px;
+    max-width: 100%;
+    }
+
+    .memberbio:hover .overlay1 {
+    width: 100%;
+    padding: 10px 14px;
+    }
+
+    .person {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-inline: 12px;
+    }
+
+    .person img {
+    height: 140px;
+    width: 140px;
+    }
+        
+    .person p:first-of-type {
+    font-size: 16px;
+    }
+
+    .person p:not(:first-of-type) {
+    font-size: 17px;
+    }
+    
+    .prev, .next {
+    height: 51px;
+    width: 51px;
+    padding: 18px;
+    }
+
+    .contact {
+    padding-inline: 12px;
+    }
+
+    .contact form, .contact div {
+    flex-basis: 100%;
+    width: 100%;
+    }
+    
+    .contact p {
+    padding-bottom: 8px;
+    padding-left: 0;
+    }
+
+    .contact div:nth-child(2) {
+    padding: 0px;
+    }        
+    
+    .font {
+    font-size: 22px;
+    }   
+}
+
+@media screen and (min-width: 475px) and (max-width: 640px) {
+    .hero1 {
+    margin-top: 70px;
+    height: auto;
+    padding-inline: 10px;
+    /* padding-top: 84px; */
+    padding-bottom: 36px;
+    }
+
+    .hero1 h1 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    }
+
+    .hero1 p {
+    padding-inline: 10px;
+    /* font-size: 15px; */
+    }
+
+    .team, .podcasts-wrapper, .blogs, .contact, .e-books-wrapper {
+    padding-inline: 20px;
+    row-gap: 32px;
+    justify-content: center;
+    }
+
+    .person {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-inline: 20px;
+    }
+
+    .members {
+    width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .hero1 {
+    margin-top: 94px;
+    height: auto;
+    padding-inline: 10px;
+    padding-bottom: 36px;
+    }
+
+    .hero1 h1 {
+    font-size: 46px;
+    line-height: 48px;
+    text-align: center;
+    }
+
+    .hero1 p {
+    padding-inline: 10px;
+    }
+
+    .team, .blogs, .contact, .e-books-wrapper {
+    padding-inline: 30px;
+    row-gap: 32px;
+    justify-content: center;
+    }
+
+    .person {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-inline: 30px;
+    }
+
+    .podcasts-wrapper {
+    flex-direction: row;
+    padding-inline: 12px;
+    column-gap: 16px;
+    }    
+
+    .members {
+    width: 416px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero1 {
+    height: auto;
+    padding-bottom: 56px;
+    }
+
+    .hero1 p {
+    padding-inline: 44px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .newhero, .hero1 {
+    padding-inline: 360px;
+    }
+
+    .team, .blogs, .contact, .e-books-wrapper, .podcasts-wrapper, .testify {
+    padding-inline: 465px;
+    }
+
+    .vision p:not(:first-of-type), .donate p:not(:first-of-type), .history p:not(:first-of-type) {
+    max-width: 70ch;
+    }
+}

@@ -1,0 +1,125 @@
+.podcasts-wrapper {
+padding-inline: 90px;
+padding-top: 40px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+row-gap: 40px;
+column-gap: 40px;
+}
+
+.podcast {
+width: 350px;
+/* background-color: #ecdfd5;
+padding: 8px; */
+}
+
+h4 {
+color: #36200f;
+}
+
+/* For Testimonial.html*/
+.testify {
+text-align: center;
+}
+
+.testimony {
+height: auto;
+}
+
+.person {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding-top: 60px;
+padding-bottom: 65px;
+padding-inline: 140px;
+}
+
+.person img {
+height: 160px;
+width: 160px;
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+border-radius: 50%;
+transition: none;
+}
+
+.person p:first-of-type {
+font-size: 21px;
+}
+
+.person p:not(:first-of-type) {
+font-size: 18px;
+}
+
+.quote {
+font-size: 28px;
+font-weight: bold;
+}
+
+.prev, .next {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+border-radius: 50%;
+background-color: #874f26;
+height: 56px;
+width: 56px;
+color: #fff;
+font-weight: bold;
+}
+
+.prev:hover, .next:hover {
+cursor: pointer;
+}
+
+.carousels {
+display: flex;
+flex-direction: row;
+gap: 36px;
+}
+
+.h2 {
+text-align: center;
+}
+
+.e-books-wrapper {
+padding-inline: 90px;
+padding-top: 40px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+row-gap: 40px;
+column-gap: 20px;
+}
+
+.ebooks iframe {
+width: 100%;
+height: 640px;
+/* background-color: red;
+accent-color: red; */
+}
+
+.e-books {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-self: center;
+justify-content: space-between;
+}
+
+.e-books h4 {
+/* font-size: ; */
+padding-top: 16px;
+padding-bottom: 20px;
+}

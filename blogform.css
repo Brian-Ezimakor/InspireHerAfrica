@@ -1,0 +1,299 @@
+@import url("team.css");
+.blog-wrapper {
+padding-inline: 120px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 50px;
+margin-top: 150px;
+/* background-color: red; */
+}
+
+.blog-content {
+padding: 28px;
+width: 100%;
+/* background-color: green; */
+}
+
+.blog-content img {
+width: 100%;
+height: 300px;
+margin-inline: auto;
+text-align: center;
+background-repeat: no-repeat;
+/* background-position: center top; */
+background-size: cover;
+object-fit: cover;
+margin-top: 26px;
+margin-bottom: 24px;
+}
+
+.img-holder {
+padding-inline: 20px;
+/* background-color: plum; */
+text-align: center;
+}
+
+.blog-content h2 {
+font-size: 30px;
+}
+
+h4, h3 {
+color: #36200f;
+}
+
+a {
+color: #a25f2d;
+}
+
+.commenterName a {
+color: #36200f;
+}
+
+h4:hover {
+color: #a25f2d;
+}
+
+#bloggerName {
+font-size: 18px;
+}
+
+.featured {
+width: 500px;
+height: 1000px;
+/* background-color: blue; */
+padding: 20px;
+}
+
+.featured img {
+width: 100%;
+height: 150px;
+text-align: center;
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: cover;
+margin-top: 10px;
+}
+
+.featured h3 {
+color: #36200f;
+font-size: 21px;
+padding-bottom: 15px;
+}
+
+.featured p {
+font-size: 14px;
+}
+
+.nav {
+margin-top: 24px;
+display: flex;
+justify-content: space-between;
+color: #a25f2d;
+}
+
+.nav a {
+color: #a25f2d;
+font-size: 15px;
+}
+
+.nav a:hover {
+color: #874f26;
+}
+
+.comment img {
+width: 70px;
+height: 70px;
+border-radius: 50%;
+}
+
+.person {
+display: flex;
+flex-direction: column;
+/* gap: 10px; */
+}
+
+.brief {
+display: flex;
+flex-direction: row;
+/* justify-content: center; */
+align-items: center;
+gap: 20px;
+/* text-align: left;
+float: left; */
+/* background-color: #fff; */
+}
+
+.brief p .brief a {
+font-size: 14px;
+color: black;
+}
+
+.brief div:last-child {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.brief div:last-child a, .brief div:last-child p {
+color: black;
+font-size: 14px;
+text-align: left;
+}
+
+form {
+margin-top: 40px;
+}
+
+textarea {
+height: 200px;
+width: 100%;
+border-radius: 10px;
+padding: 12px 16px;
+margin-bottom: 24px;
+border: 1px solid;
+}
+
+input {
+padding: 12px 16px;
+border-radius: 10px;
+border: 1px solid;
+}
+
+label {
+font-size: 14px;
+}
+
+form div {
+display: flex;
+flex-direction: row;
+gap: 18px;
+}
+
+.blogs {
+padding-inline: 120px;
+padding-top: 36px;
+padding-bottom: 36px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 38px;
+column-gap: 40px;
+}
+
+.blog-teaser {
+height: auto;
+padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 475px) {
+    .blog-wrapper {
+    margin-top: 85px;
+    padding-inline: 12px;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    .blog-content {
+    padding-inline: 0;
+    width: 100%;
+    }
+
+    .featured {
+    width: 100%;
+    height: auto;
+    padding-inline: 0;
+    }
+
+    .blog-content h2 {
+    font-size: 28px;
+    }
+
+    .img-holder {
+    padding-inline: 0;
+    }
+
+    .nav a {
+    font-size: 16px;
+    }
+
+    form div {
+    flex-direction: column;
+    }
+
+    form {
+    margin-top: 24px;
+    }
+
+    /* .comment div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    } */
+
+}
+
+@media screen and (min-width: 475px) and (max-width: 640px) {
+    .blog-wrapper {
+    margin-top: 100px;
+    padding-inline: 20px;
+    flex-direction: column;
+    }
+
+    .blog-content {
+    padding: 0px;
+    }
+
+    .featured {
+    width: 100%;
+    height: auto;
+    padding-inline: 0;
+    }
+
+    form div {
+    flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .blog-wrapper {
+    margin-top: 124px;
+    padding-inline: 30px;
+    gap: 24px;
+    flex-direction: column;
+    }
+
+    .blog-content {
+    padding: 0px;
+    }
+
+    .featured {
+    width: 100%;
+    height: auto;
+    padding-inline: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .blog-wrapper {
+    padding-inline: 20px;
+    gap: 16px;
+    }
+
+    .featured {
+    width: 100%;
+    height: auto;
+    padding-inline: 0;
+    }
+
+}
+
+@media screen and (min-width: 1441px) {
+    .blog-wrapper {
+    padding-inline: 465px;
+    }
+}
